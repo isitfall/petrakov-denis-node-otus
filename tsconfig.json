@@ -1,15 +1,22 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "_version": "22.0.0",
   "compilerOptions": {
-    "lib": [
-      "es2023"
-    ],
-    "module": "node16",
-    "target": "es2022",
-    "strict": true,
+
+    // Treat files as modules even if it doesn't use import/export
+    "moduleDetection": "force",
+
+    // Ignore module structure
+    "module": "Preserve",
+
+    // Allow JSON modules to be imported
+    "resolveJsonModule": true,
+
+    // Allow JS files to be imported from TS and vice versa
+    "allowJs": true,
+
+    // Use correct ESM import behavior
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node16"
+
+    // Disallow features that require cross-file awareness
+    "isolatedModules": true,
   }
 }
