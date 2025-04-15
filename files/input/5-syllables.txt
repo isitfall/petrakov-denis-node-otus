@@ -1,0 +1,4 @@
+ab, cb, bss, cb, b, cb
+            ab, cb, bss, cb, b, cb
+    ab, cb, bss, cb, b, cb
+ab, cb, bss, cb, b, cb
