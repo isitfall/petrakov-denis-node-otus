@@ -3,7 +3,7 @@ import { mockData, mockData1 } from "./mock";
 import { reduceNested } from "./utils";
 
 
-const buildTree = (data: Data): string => {
+export const buildTree = (data: Data): string => {
     return [data].reduce((acc, current) => {
         acc = current.name.toString();
         if (current?.items?.length) {
